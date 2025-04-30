@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reviser_scoreboard_screen"
+    tools:context=".Score">
+
+    <TextView
+        android:id="@+id/scoreTextview"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:text=""
+        android:translationX="150dp"
+        android:translationY="300dp" />
+
+    <TextView
+        android:id="@+id/feedbackTextview"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:translationY="380dp"
+        android:translationX="5dp"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:translationY="600dp"
+        android:translationX="-230dp"
+        android:text="Review"
+        android:backgroundTint="#FFC107"/>
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:translationY="600dp"
+        android:translationX="-90dp"
+        android:backgroundTint="#D70909"
+        android:text="Exit" />
+
+
+
+</LinearLayout>

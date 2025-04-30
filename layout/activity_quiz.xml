@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/reviser_second_screen"
+    tools:context=".Quiz">
+
+
+
+    <Button
+        android:id="@+id/trueButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:translationY="650dp"
+        android:backgroundTint="#4CAF50"
+        android:text="True" />
+
+    <Button
+        android:id="@+id/falseButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:translationY="650dp"
+        android:translationX="140dp"
+        android:backgroundTint="#951515"
+        android:text="False" />
+
+    <TextView
+        android:id="@+id/questionTextview"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:translationX="-260dp"
+        android:translationY="30dp" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:translationY="800dp"
+        android:translationX="-500dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:translationX="-730dp"
+        android:translationY="400dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:text="" />
+
+</LinearLayout>

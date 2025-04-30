@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reviser_final_screen"
+    tools:context=".Review">
+
+
+    <TextView
+        android:id="@+id/fullscreen_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Here is what you struggled  with "
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        app:layout_constraintBottom_toTopOf="@+id/reviewTextview"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43" />
+
+    <TextView
+        android:id="@+id/reviewTextview"
+        android:layout_width="261dp"
+        android:layout_height="35dp"
+        android:layout_marginBottom="756dp"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/restartButton"
+        android:layout_width="138dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="52dp"
+        android:backgroundTint="#FF5722"
+        android:text="Restart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="136dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="44dp"
+        android:text="Exit"
+        android:backgroundTint="#FF0808"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
