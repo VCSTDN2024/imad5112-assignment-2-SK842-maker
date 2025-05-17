@@ -10,39 +10,53 @@
 
     <TextView
         android:id="@+id/scoreTextview"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:textSize="24sp"
         android:text=""
-        android:translationX="150dp"
-        android:translationY="300dp" />
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:translationX="50dp"
+        android:translationY="200dp" />
 
     <TextView
         android:id="@+id/feedbackTextview"
-        android:layout_width="150dp"
-        android:layout_height="35dp"
-        android:translationY="380dp"
-        android:translationX="5dp"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:translationY="500dp"
+        android:translationX="-300dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
         android:text="" />
 
 
     <Button
         android:id="@+id/reviewButton"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:translationY="600dp"
-        android:translationX="-230dp"
+        android:backgroundTint="#FFC107"
         android:text="Review"
-        android:backgroundTint="#FFC107"/>
+        android:translationX="-650dp"
+        android:translationY="600dp" />
 
     <Button
         android:id="@+id/exitButton"
-        android:layout_width="100dp"
+        android:layout_width="120dp"
         android:layout_height="wrap_content"
-        android:translationY="600dp"
-        android:translationX="-90dp"
         android:backgroundTint="#D70909"
-        android:text="Exit" />
+        android:text="Exit"
+        android:translationX="-600dp"
+        android:translationY="600dp" />
 
+    <ImageView
+        android:id="@+id/imageViewFeedback"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_weight="0"
+        android:translationX="-850dp"
+        android:translationY="290dp"
+         />
 
 
 </LinearLayout>

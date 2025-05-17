@@ -13,28 +13,30 @@
         android:id="@+id/fullscreen_header"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Here is what you struggled  with "
+        android:text="This is what you struggled  with  "
         android:textAlignment="center"
-        android:textSize="24sp"
         android:textColor="@color/white"
+        android:textSize="24sp"
         android:textStyle="italic"
         android:typeface="monospace"
         app:layout_constraintBottom_toTopOf="@+id/reviewTextview"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.544"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.43" />
+        app:layout_constraintVertical_bias="0.128" />
 
     <TextView
         android:id="@+id/reviewTextview"
-        android:layout_width="261dp"
-        android:layout_height="35dp"
-        android:layout_marginBottom="756dp"
+        android:layout_width="369dp"
+        android:layout_height="298dp"
+        android:layout_marginBottom="460dp"
         android:text=""
+        android:textSize="20sp"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintHorizontal_bias="0.619"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
@@ -53,13 +55,11 @@
         android:layout_width="136dp"
         android:layout_height="52dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="44dp"
-        android:text="Exit"
+        android:layout_marginBottom="56dp"
         android:backgroundTint="#FF0808"
+        android:text="Exit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -11,34 +11,34 @@
 
     <TextView
         android:id="@+id/welcomeTextView"
-        android:layout_width="272dp"
-        android:layout_height="131dp"
+        android:layout_width="333dp"
+        android:layout_height="150dp"
         android:fontFamily="monospace"
-        android:text="Welcome to Reviser!"
+        android:text=" Hello Welcome to Reviser!"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="40sp"
+        android:textSize="35sp"
         android:textStyle="italic"
-        android:translationX="80dp"
-        android:translationY="50dp"
+        android:translationX="50dp"
+        android:translationY="40dp"
         android:typeface="monospace" />
 
     <Button
         android:id="@+id/exitButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Exit"
-        android:translationX="-30dp"
         android:backgroundTint="#951919"
-        android:translationY="890dp" />
+        android:text="Exit"
+        android:translationX="-80dp"
+        android:translationY="800dp" />
 
     <Button
         android:id="@+id/startButton"
-        android:layout_width="150dp"
+        android:layout_width="154dp"
         android:layout_height="wrap_content"
-        android:translationX="-400dp"
-        android:translationY="890dp"
         android:backgroundTint="#4CAF50"
-        android:text="Start" />
+        android:text="Start"
+        android:translationX="-450dp"
+        android:translationY="800dp" />
 
 </LinearLayout>

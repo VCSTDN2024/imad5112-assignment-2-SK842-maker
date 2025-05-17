@@ -10,12 +10,11 @@
     tools:context=".Quiz">
 
 
-
     <Button
         android:id="@+id/trueButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:translationY="650dp"
+        android:translationY="660dp"
         android:backgroundTint="#4CAF50"
         android:text="True" />
 
@@ -23,20 +22,23 @@
         android:id="@+id/falseButton"
         android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:translationY="650dp"
-        android:translationX="140dp"
         android:backgroundTint="#951515"
-        android:text="False" />
+        android:text="False"
+        android:translationX="100dp"
+        android:translationY="660dp" />
 
     <TextView
         android:id="@+id/questionTextview"
         android:layout_width="350dp"
-        android:layout_height="45dp"
+        android:layout_height="135dp"
         android:text=""
-        android:textSize="20sp"
+        android:textAlignment="center"
         android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"
         android:translationX="-260dp"
-        android:translationY="30dp" />
+        android:translationY="30dp"
+        android:typeface="serif" />
 
     <Button
         android:id="@+id/nextQuestionButton"
@@ -50,11 +52,20 @@
     <TextView
         android:id="@+id/resultTextView"
         android:layout_width="300dp"
-        android:layout_height="35dp"
-        android:translationX="-730dp"
-        android:translationY="400dp"
+        android:layout_height="55dp"
+        android:text=""
+        android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="24sp"
-        android:text="" />
+        android:translationX="-730dp"
+        android:translationY="580dp" />
+
+    <ImageView
+        android:id="@+id/imageViewQuestions"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_weight="0"
+        android:translationX="-1005dp"
+        android:translationY="200dp" />
 
 </LinearLayout>
