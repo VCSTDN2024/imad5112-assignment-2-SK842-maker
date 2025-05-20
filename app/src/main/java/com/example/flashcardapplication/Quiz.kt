@@ -3,14 +3,12 @@ package com.example.flashcardapplication
 import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import org.w3c.dom.Text
 
 //kincade is a g//
 class Quiz : AppCompatActivity() {
@@ -55,7 +53,7 @@ class Quiz : AppCompatActivity() {
 
 
     }
-
+    //This variable indicates the index for each of the Question array elements//
     private var currrentQuestionIndex = 0
     private var score = 0
 
@@ -105,17 +103,21 @@ class Quiz : AppCompatActivity() {
             questionTextView.text = questions[currrentQuestionIndex]
             imageViewQuestions.setImageResource(images[currrentQuestionIndex]) //setImageResource links the array of images to the current Question Index//
 
+            val slideInLeft = AnimationUtils.loadAnimation(this, R.anim.slide_in_left)
+            questionTextView.startAnimation(slideInLeft)
+            imageViewQuestions.startAnimation(slideInLeft)
+
         }
 
         private fun checkAnswer(userAnswer: Boolean) {
             val correctAnswer =  answers[currrentQuestionIndex]
 
             if (userAnswer == correctAnswer) {
-                resultTextView.text = "That is Correct! Well done!"
+                resultTextView.text = "You Got it Right! good job"
                 resultTextView.setTextColor(Color.GREEN)
                 score++
             }else{
-                resultTextView.text = "That is Incorrect!"
+                resultTextView.text = "Oops! thats wrong Im afraid"
                 resultTextView.setTextColor(Color.RED)
 
             }

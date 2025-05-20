@@ -30,11 +30,12 @@ class Review : AppCompatActivity() {
         if(questions != null && answers != null && questions.size == answers.size){
             for (i in questions.indices) {
                     reviewText.append("${i + 1} - ${questions[i]}\n")
-                    reviewText.append(" Answer:${if (answers[i]) "True" else "False"}\n")
+                    reviewText.append(" correctAnswer:${if (answers[i]) "True" else "False"}\n")
+
             }
             reviewTextView.text = reviewText.toString()
         }else{
-            reviewTextView.text = "Warning! results could not be generated."
+            reviewTextView.text = error("Unable to review the Questions you got wrong.")
 
         }
 

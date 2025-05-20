@@ -2,6 +2,7 @@ package com.example.flashcardapplication
 
 import android.content.Intent
 import android.os.Bundle
+import android.view.animation.AnimationUtils
 import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
@@ -18,6 +19,14 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val welcomeTextView = findViewById<TextView>(R.id.welcomeTextView)
+        val startQuizTextView = findViewById<TextView>(R.id.starQuizTextView)
+
+        val slideInLeft = AnimationUtils.loadAnimation(this, R.anim.slide_in_left)
+        val slideInRight =  AnimationUtils.loadAnimation(this, R.anim.slide_in_right)
+
+        welcomeTextView.startAnimation(slideInRight)
+        startQuizTextView.startAnimation(slideInLeft)
+
         val startButton = findViewById<Button>(R.id.startButton)
         val exitButton = findViewById<Button>(R.id.exitButton)
 

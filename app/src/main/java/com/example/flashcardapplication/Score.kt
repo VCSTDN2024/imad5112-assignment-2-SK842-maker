@@ -45,7 +45,7 @@ class Score : AppCompatActivity() {
             imageRes = R.drawable.fail_question
 
         } else {
-           error("Marks could not be generated")  //error message displayed if the score couldnt be generated//
+           error("Marks could not be generated")  //error message displayed if the score could not be generated//
         }
 
 
