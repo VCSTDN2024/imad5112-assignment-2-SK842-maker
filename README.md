@@ -1,5 +1,5 @@
 # Reviser!
-- Smakelo Khoza
+- Samkelo Khoza
 - ST10470317
 - 1
 - Higher certificate in Mobile pplication Development
