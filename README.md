@@ -6,7 +6,7 @@
 - Introduction to mobile Application Development
 
 ## Links
-- **GitHub Repository**: [Repository URL]
+- **GitHub Repository**: https://github.com/VCSTDN2024/imad5112-assignment-2-SK842-maker.git
 - **YouTube Video**: [YouTube Video Link]
 
 ---
