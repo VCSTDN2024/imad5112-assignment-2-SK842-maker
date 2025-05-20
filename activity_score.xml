@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reviser_scoreboard_screen"
+    tools:context=".Score">
+
+    <TextView
+        android:id="@+id/scoreTextview"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:textSize="24sp"
+        android:text=""
+        android:textStyle="italic"
+        android:textColor="@color/white"
+        android:translationX="50dp"
+        android:translationY="200dp" />
+
+    <TextView
+        android:id="@+id/feedbackTextview"
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:translationY="500dp"
+        android:translationX="-300dp"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:text="" />
+
+
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFC107"
+        android:text="Review"
+        android:translationX="-680dp"
+        android:translationY="600dp" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#D70909"
+        android:text="Exit"
+        android:translationX="-550dp"
+        android:translationY="600dp" />
+
+    <ImageView
+        android:id="@+id/imageViewFeedback"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:layout_weight="0"
+        android:translationX="-850dp"
+        android:translationY="270dp"
+         />
+
+
+</LinearLayout>

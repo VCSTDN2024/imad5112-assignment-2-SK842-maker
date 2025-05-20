@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@drawable/reviser_second_screen"
+    tools:context=".Quiz">
+
+
+    <Button
+        android:id="@+id/trueButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:translationY="660dp"
+        android:backgroundTint="#4CAF50"
+        android:text="True" />
+
+    <Button
+        android:id="@+id/falseButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#951515"
+        android:text="False"
+        android:translationX="100dp"
+        android:translationY="660dp" />
+
+    <TextView
+        android:id="@+id/questionTextview"
+        android:layout_width="350dp"
+        android:layout_height="135dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:translationX="-250dp"
+        android:translationY="25dp"
+        android:typeface="serif" />
+
+    <Button
+        android:id="@+id/nextQuestionButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:translationY="750dp"
+        android:translationX="-510dp"
+        android:backgroundTint="#3F51B5"
+        android:text="Next" />
+
+    <TextView
+        android:id="@+id/resultTextView"
+        android:layout_width="300dp"
+        android:layout_height="55dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:translationX="-730dp"
+        android:translationY="570dp" />
+
+    <ImageView
+        android:id="@+id/imageViewQuestions"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_weight="0"
+        android:translationX="-1005dp"
+        android:translationY="200dp" />
+
+</LinearLayout>

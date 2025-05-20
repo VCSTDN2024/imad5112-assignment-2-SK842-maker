@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/reviser_welcome_screen"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/welcomeTextView"
+        android:layout_width="350dp"
+        android:layout_height="135dp"
+        android:fontFamily="monospace"
+        android:text=" Hello Welcome to Reviser!"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="35sp"
+        android:textStyle="italic"
+        android:translationX="30dp"
+        android:translationY="50dp"
+        android:typeface="monospace" />
+
+    <Button
+        android:id="@+id/exitButton"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#951919"
+        android:text="Exit"
+        android:translationX="-100dp"
+        android:translationY="800dp" />
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#4CAF50"
+        android:text="Start"
+        android:translationX="-460dp"
+        android:translationY="800dp" />
+
+    <TextView
+        android:id="@+id/starQuizTextView"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text=" Press Start to begin the Quiz "
+        android:fontFamily="monospace"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textStyle="italic"
+        android:typeface="monospace"
+        android:translationX="-550dp"
+        android:translationY="590dp"/>
+
+</LinearLayout>
